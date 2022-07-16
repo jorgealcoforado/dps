@@ -15,6 +15,6 @@ public class AppStartupRunner implements ApplicationRunner {
 	
     @Override
     public void run(ApplicationArguments args) throws Exception {
-    	newsConfig.getApi(NewsEnum.NEWSAPI).getNews("papa");
+    	newsConfig.getApi(NewsEnum.NEWSAPI).getNews("papa").getResults().forEach(System.out::println);
     }
 }

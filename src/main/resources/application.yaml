@@ -4,4 +4,8 @@ api:
   basepath: /v2
   path: /everything 
   apiKey: 8fb7b8404e0e4a97a4e112452119447e
-  
+ newsdata:
+  url:  https://newsdata.io
+  basepath: /api/1
+  path: /news 
+  apiKey: pub_927824877c2e7480e5e34a2edc3df2c84878

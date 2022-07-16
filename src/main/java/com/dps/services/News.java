@@ -2,8 +2,10 @@ package com.dps.services;
 
 import org.springframework.stereotype.Component;
 
+import com.dps.dto.response.NewsResponse;
+
 @Component
 public interface News {
 	
-	void getNews(String search);
+	NewsResponse getNews(String search);
 }
