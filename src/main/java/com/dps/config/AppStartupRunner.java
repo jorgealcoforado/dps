@@ -15,6 +15,10 @@ public class AppStartupRunner implements ApplicationRunner {
 	
     @Override
     public void run(ApplicationArguments args) throws Exception {
-    	newsConfig.getApi(NewsEnum.NEWSAPI).getNews("papa").getResults().forEach(System.out::println);
+    	newsConfig
+    		.getApi(NewsEnum.NEWSDATA)
+    			.getNews("papa")
+    				.getResults()
+    					.forEach(System.out::println);
     }
 }
