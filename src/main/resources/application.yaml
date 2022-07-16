@@ -1,0 +1,7 @@
+api:
+ newsapi:
+  url:  https://newsapi.org
+  basepath: /v2
+  path: /everything 
+  apiKey: 8fb7b8404e0e4a97a4e112452119447e
+  

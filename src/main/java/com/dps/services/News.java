@@ -1,10 +1,9 @@
 package com.dps.services;
 
-import com.kwabenaberko.newsapilib.NewsApiClient;
+import org.springframework.stereotype.Component;
 
+@Component
 public interface News {
 	
-	NewsApiClient newsApiClient = new NewsApiClient("8fb7b8404e0e4a97a4e112452119447e");
-	
-	void getNews();
+	void getNews(String search);
 }
